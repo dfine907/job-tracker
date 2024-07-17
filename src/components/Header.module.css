@@ -1,0 +1,37 @@
+/* .header {
+    background-color: aqua;
+}
+
+.title {
+    color: pink
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  } */
+
+  .header {
+    text-align: center;
+    margin: 3rem auto;
+  }
+  
+  
+  .header img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+    background-color: transparent;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+  }
