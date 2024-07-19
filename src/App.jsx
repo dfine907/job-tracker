@@ -1,8 +1,18 @@
 import './App.css'
 import logo from './assets/money.png'
+import { useState } from 'react'
 import Login from './components/Login'
 
 function App() {
+  const [companyWebsite, setCompanyWebsite] = useState('')
+
+  // handlers:
+  function handleWebsiteChange(event) {
+    event.preventDefault()
+    setCompanyWebsite(event.target.value)
+    console.log(event.target.value)
+  }
+
   return (
     <>
       <div>
@@ -14,13 +24,24 @@ function App() {
       </div>
 
       <div>
-        <h2>Component 2</h2>
+        <form>
+          <h2> (Company Info Component)</h2>
+          <label>
+            Company website:
+            <input
+              className="company-input"
+              type="text"
+              placeholder="Company Name"
+              value={companyWebsite}
+              onChange={handleWebsiteChange}
+            />
+          </label>
+        </form>
       </div>
 
       <div>
         <h2>Component 3</h2>
       </div>
-
     </>
   )
 }
