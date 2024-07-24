@@ -2,6 +2,8 @@ import './App.css'
 import logo from './assets/money.png'
 import { useState } from 'react'
 import Login from './components/Login'
+import ProjectSidebar from './ProjectSidebar'
+import TestProp from './components/TestProp'
 
 function App() {
   const [companyWebsite, setCompanyWebsite] = useState('')
@@ -19,8 +21,12 @@ function App() {
         <header>
           <img src={logo} alt="money logo" width={100} />
           <h1> Dashboard: Job Tracker App </h1>
-          <Login />
+          {/* <Login /> */}
         </header>
+      </div>
+
+      <div>
+      <ProjectSidebar /> 
       </div>
 
       <div>
@@ -41,6 +47,7 @@ function App() {
 
       <div>
         <h2>Component 3</h2>
+        <TestProp name={"Fred"} />
       </div>
     </>
   )

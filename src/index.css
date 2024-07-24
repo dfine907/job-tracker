@@ -14,7 +14,10 @@ body {
   min-height: 100vh;
 }
 
-
+span {
+  color: lime;
+  font-weight: bolder;
+}
 
 
 #user-input {
@@ -197,6 +200,7 @@ fieldset {
   color: #869999;
 }
 
+
 .add-job {
   width: 90%;
   max-width: 40rem;
@@ -209,4 +213,14 @@ fieldset {
 
 .company-input {
   margin-left: 10px;
+}
+
+.test-prop {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: purple;
+  border-radius: 8px;
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
 }
