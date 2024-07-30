@@ -1,12 +1,15 @@
-import './App.css'
-import logo from './assets/money.png'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
+import logo from './assets/money.png'
 import TestProp from './components/TestProp'
+import CompanyForm from './components/CompanyForm'
+
+import './App.css'
 
 function App() {
   const [companyWebsite, setCompanyWebsite] = useState('')
+  
 
   const fetchAPI = async () => {
     try {
@@ -14,7 +17,7 @@ function App() {
         console.log(response.data.fruits);
         
     } catch (error) {
-        console.error('Error in fetching data:', error);
+        console.error('There was an Error in fetching the data:', error);
     }
 };
 
@@ -27,6 +30,9 @@ function App() {
   useEffect(() => {
     fetchAPI()
   }, [])
+
+
+
 
   return (
     <>
@@ -54,9 +60,14 @@ function App() {
         </form>
       </div>
 
-      <div>
-        <h2>Component 3</h2>
+      <div className='component-border'>
+        <h2>Component Import </h2>
         <TestProp name={"Fred"} />
+      </div>
+
+      <div className='component-border'>
+        <h2>Component Import </h2>
+        <CompanyForm /> 
       </div>
     </>
   )

@@ -19,6 +19,12 @@ span {
   font-weight: bolder;
 }
 
+.component-border {
+  margin: 20px;
+  border: 2px purple solid;
+  border-radius: 4px;
+}
+
 
 #user-input {
   padding: 1rem;

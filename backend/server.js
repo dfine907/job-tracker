@@ -11,6 +11,11 @@ app.get('/', (req, res) => {
   
 })
 
+app.get('/list', (req, res) => {
+  res.json("This is a dummy get request")
+  
+})
+
 app.post('/companies', (req, res) => {
   res.send('POST request to the add companies')
 })
